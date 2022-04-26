@@ -175,7 +175,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a2b99c49533753f4ab589a562c4a89ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -928,7 +928,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player_Follower: {fileID: 1897675323}
-  Player_Speed: 3
+  Player_WalkSpeed: 3
+  Player_RunSpeed: 7
 --- !u!143 &1679446733
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1061,7 +1062,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player_Follower: {fileID: 1897675323}
-  Player_Speed: 3
+  Player_WalkSpeed: 3
+  Player_RunSpeed: 7
 --- !u!1 &1897675322
 GameObject:
   m_ObjectHideFlags: 0
