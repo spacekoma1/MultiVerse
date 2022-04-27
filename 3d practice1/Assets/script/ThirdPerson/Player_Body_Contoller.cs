@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player_Body_Contoller : MonoBehaviour
 {
     [SerializeField] private Transform Player_Follower;
+    [SerializeField] private float gravity = 8.0F;
 
     public float Player_WalkSpeed = 3.0f;
     public float Player_RunSpeed = 7.0f;
@@ -54,6 +55,8 @@ public class Player_Body_Contoller : MonoBehaviour
 
     void FixedUpdate()
     {
-        player_controller.Move(MoveDir * Time.fixedDeltaTime);
+        //플레이어 중력 설정 (임시)
+        MoveDir.y -= gravity;
+        player_controller.Move(MoveDir * Time.fixedDeltaTime); //플레이어 움직이기
     }
 }
